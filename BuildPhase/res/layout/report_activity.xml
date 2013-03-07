@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="center_vertical"
+    	    android:gravity="top"
+    	    android:orientation="vertical" 
+    	    android:background="@drawable/bgnd">>
+
+    		<ImageView
+    		    android:id="@+id/picpreview"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="200dp"
+    		    android:scaleType="center" />
+
+    		<EditText
+    		    android:id="@+id/comments"
+    		    android:layout_width="match_parent"
+    		    android:layout_height="134dp"
+    		    android:ems="10"
+    		    android:inputType="textMultiLine"
+    		    android:text="Comments: " 
+    		    android:drawableTop="@android:color/black"
+   				android:drawableBottom="@android:color/black"/>
+
+    	    <TextView
+    	        android:id="@+id/address"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="Address: Loading" />
+
+    	    <TextView
+    	        android:id="@+id/date"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:lines="1"
+    	        android:text="Date: Loading..."
+    	        android:visibility="visible" />
+
+    	</LinearLayout>
+
+    	<LinearLayout
+    	    android:layout_width="317dp"
+    	    android:layout_height="88dp"
+    	    android:gravity="bottom|right" >
+
+    	    <Button
+    	        android:id="@+id/cancel"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="Cancel" />
+
+    	    <Button
+    	        android:id="@+id/submit"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_gravity="bottom|right"
+    	        android:text="Submit" />
+
+    	</LinearLayout>
+
+</LinearLayout>
